@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+	<title>Sign-Up</title>
+</head>
+
+
+<style>
+body {
+  font-family: 'Sofia';font-size: 40px;
+  color : black;
+  text-align: center;
+  background : url("https://i.ytimg.com/vi/xYkz0Ueg0L4/maxresdefault.jpg");
+  background-size: cover;
+  align : center;
+}
+.g-recaptcha {
+    margin: 0 auto 1em auto;
+    padding-left: 45.5%;
+      border-radius: 20px;
+
+    }
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 80px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  float: center;
+}
+
+.container {
+  border-radius: 35px;
+  opacity : 0.93;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.text{
+  width: 20%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+</style>
+
+
+<body>
+
+<p>Sign Up</p>
+<div class = "container">
+    <form method="POST" action="{{url_for('form')}}">
+    {{form.csrf_token }}
+
+    {{form.username.label}}
+
+    {{form.username(class ="text")}}
+    <br>
+
+    {{form.password.label}}
+    {{form.password(class ="text")}}
+    <br>
+    <br>
+    {{form.recaptcha(class ="g-recaptcha")}}
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+</div>
+
+
+</body>
+</html>
