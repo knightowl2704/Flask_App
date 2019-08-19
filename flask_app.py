@@ -7,8 +7,8 @@ import  pymysql.connections
 
 app = Flask(__name__)
 app.secret_key = 'developmentkey'
-app.config["RECAPTCHA_PUBLIC_KEY"] = '6LfFurMUAAAAADL-9rKXrJQBXB-8nVaH9qauBtME'
-app.config["RECAPTCHA_PRIVATE_KEY"] = '6LfFurMUAAAAANjczjNUwe2kfdITj1zvCEgtRwJx-u'
+app.config["RECAPTCHA_PUBLIC_KEY"] = '#######################################'
+app.config["RECAPTCHA_PRIVATE_KEY"] = '#######################################'
 app.config["TESTING"] = True
 
 mysql = MySQL()
