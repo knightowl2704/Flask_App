@@ -6,9 +6,4 @@ Currently it is just a simple sign up form with basic validators.
 The app is supported by *flask_wtf* module for creating and validating forms.
 The app form also has a built-in *reCAPTCHA* for validation.
 
-
-![image](https://github.com/knightowl2704/Flask_App/blob/master/Screenshot%20from%202019-08-19%2021-42-18.png)
-
 Added support for **MySQL** database storage for the signup form with basic *MD5* hashing for password storage.
-
-![image](https://github.com/knightowl2704/Flask_App/blob/master/screenshots/Untitled%20design.png)
